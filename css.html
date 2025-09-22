@@ -64,25 +64,65 @@
             </section>
 
             <!-- Sélecteurs -->
+            <!-- Sélecteurs -->
+            <section class="card">
+                <h2>Sélecteurs CSS</h2>
+                <p>Les sélecteurs indiquent au CSS quels éléments HTML styliser. Voici les plus importants :</p>
 
-Les sélecteurs indiquent au CSS quels éléments HTML styliser. Voici les plus importants :
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type de Sélecteur</th>
+                            <th>Syntaxe</th>
+                            <th>Exemple</th>
+                            <th>Ce qu'il sélectionne</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Élément</strong></td>
+                            <td><code>element</code></td>
+                            <td><code>p { color: blue; }</code></td>
+                            <td>Tous les paragraphes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Classe</strong></td>
+                            <td><code>.nomclasse</code></td>
+                            <td><code>.highlight { background: yellow; }</code></td>
+                            <td>Éléments avec class="highlight"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ID</strong></td>
+                            <td><code>#nomid</code></td>
+                            <td><code>#header { font-size: 24px; }</code></td>
+                            <td>Élément avec id="header"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Universel</strong></td>
+                            <td><code>*</code></td>
+                            <td><code>* { margin: 0; }</code></td>
+                            <td>Tous les éléments</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-Élément : La syntaxe est element. Exemple p { color: blue; } sélectionne tous les paragraphes.
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>🏷️ Classes</h3>
+                        <p>Utilisez les classes pour les éléments qui partagent le même style. Les classes peuvent être
+                            réutilisées plusieurs fois.</p>
+                        <pre><code>&lt;p class="attention"&gt;Attention !&lt;/p&gt;
+&lt;div class="attention"&gt;Autre attention&lt;/div&gt;</code></pre>
+                    </div>
 
-Classe : La syntaxe est .nomclasse. Exemple .highlight { background: yellow; } sélectionne les éléments avec class="highlight".
-
-ID : La syntaxe est #nomid. Exemple #header { font-size: 24px; } sélectionne l'élément avec id="header".
-
-Universel : La syntaxe est *. Exemple * { margin: 0; } sélectionne tous les éléments.
-
-Classes
-
-Utilisez les classes pour les éléments qui partagent le même style. Les classes peuvent être réutilisées plusieurs fois. Par exemple, vous pouvez avoir un paragraphe avec class="attention" et une div avec class="attention".
-
-IDs
-
-Utilisez les IDs pour les éléments uniques. Chaque ID ne devrait apparaître qu'une fois par page. Par exemple, un header avec id="en-tete-principal".
-
+                    <div class="card">
+                        <h3>🆔 IDs</h3>
+                        <p>Utilisez les IDs pour les éléments uniques. Chaque ID ne devrait apparaître qu'une fois par
+                            page.</p>
+                        <pre><code>&lt;header id="en-tete-principal"&gt;...&lt;/header&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
             <!-- Cascade et spécificité -->
             <section class="card">
                 <h2>La Cascade & la Spécificité</h2>
@@ -125,12 +165,12 @@ Utilisez les IDs pour les éléments uniques. Chaque ID ne devrait apparaître q
                 </div>
             </section>
 
-          
-         
+
+
             <!-- Félicitations -->
             <section class="takeaways">
                 <h3>🎉 Félicitations !</h3>
-               <p><strong>À vous de jouer !</strong> Réalisez les demandes suivantes : </p>
+                <p><strong>À vous de jouer !</strong> Réalisez les demandes suivantes : </p>
                 <ul>
                     <li>Ajoutez la mise en forme pour la section "Sélecteurs CSS"</li>
                     <li>Rendez le bouton "Retour au HTML" fonctionnel</li>
@@ -165,4 +205,5 @@ Utilisez les IDs pour les éléments uniques. Chaque ID ne devrait apparaître q
         </div>
     </footer>
 </body>
+
 </html>
