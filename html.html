@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apprenez les bases du HTML - structure, balises et balisage sémantique pour débutants. Guide complet des fondamentaux HTML5.">
+    <title>Introduction au HTML - Cours Fondamentaux du Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- En-tête avec navigation -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🌐 Fondamentaux du Web</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="html.html" class="active">Introduction au HTML</a></li>
+                        <li><a href="css.html">Introduction au CSS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <div class="container">
+            <!-- Section d'introduction -->
+            <section class="card intro-section">
+                <h1>Introduction au HTML</h1>
+                <p>Apprendre la structure et la sémantique des pages web</p>
+            </section>
+
+            <!-- Qu'est-ce que le HTML -->
+            <section class="card">
+                <h2>Qu'est-ce que le HTML ?</h2>
+                <p><strong>HTML</strong> signifie <strong>HyperText Markup Language</strong> (Langage de Balisage HyperTexte). Ne laissez pas ce grand nom vous effrayer - c'est en fait assez simple !</p>
+                
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>📋 Structure</h3>
+                        <p>HTML décrit la <strong>structure</strong> d'une page web - ce qui va où, comment le contenu est organisé, et comment les différentes parties se rapportent les unes aux autres.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🏷️ Sémantique</h3>
+                        <p>HTML donne du <strong>sens</strong> au contenu - il indique aux navigateurs (et autres outils) ce que chaque élément de contenu représente.</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/logo-html.png" alt="Logo HTML5">
+                    </div>
+                </div>
+
+                <div class="note">
+                    <strong>Pensez au HTML comme au squelette d'une maison :</strong> Il définit où sont les pièces, où vont les portes et fenêtres, et comment tout se connecte ensemble. Il ne rend pas la maison jolie (c'est le travail du CSS), mais il crée la structure essentielle.
+                </div>
+            </section>
+
+            <!-- Anatomie de base d'une page -->
+            <section class="card">
+                <h2>Anatomie de Base d'une Page HTML</h2>
+                <p>Chaque page HTML suit la même structure de base. Voici les parties essentielles :</p>
+
+                <pre><code>&lt;!DOCTYPE html&gt; 
+&lt;html lang="fr"&gt; 
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt; 
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Ma Première Page Web&lt;/title&gt; 
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Tout le contenu visible va ici --&gt;
+    &lt;h1&gt;Bienvenue sur mon site web !&lt;/h1&gt;
+    &lt;p&gt;Ceci est mon premier paragraphe.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Élément</th>
+                            <th>Objectif</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>&lt;!DOCTYPE html&gt;</code></td>
+                            <td>Déclare que c'est un document HTML5</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;html&gt;</code></td>
+                            <td>Élément racine qui contient tous les autres éléments</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;head&gt;</code></td>
+                            <td>Contient les métadonnées (infos sur la page)</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;meta charset&gt;</code></td>
+                            <td>Spécifie l'encodage des caractères</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;title&gt;</code></td>
+                            <td>Texte affiché dans l'onglet du navigateur</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;body&gt;</code></td>
+                            <td>Contient tout le contenu visible de la page</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Balises HTML principales -->
+            <section class="card">
+                <h2>Balises HTML Principales</h2>
+                <p>Voici les balises HTML les plus importantes que vous utiliserez régulièrement :</p>
+
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>📝 Contenu Textuel</h3>
+                        <ul>
+                            <li><code>&lt;h1&gt; à &lt;h6&gt;</code> - Titres (du plus grand au plus petit)</li>
+                            <li><code>&lt;p&gt;</code> - Paragraphes</li>
+                            <li><code>&lt;strong&gt;</code> - Texte important (gras)</li>
+                            <li><code>&lt;em&gt;</code> - Texte accentué (italique)</li>
+                            <li><code>&lt;br&gt;</code> - Saut de ligne</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>🔗 Liens et Médias</h3>
+                        <ul>
+                            <li><code>&lt;a href="url"&gt;</code> - Liens vers d'autres pages</li>
+                            <li><code>&lt;img src="image.jpg" alt="description"&gt;</code> - Images</li>
+                            <li><code>&lt;video&gt;</code> - Contenu vidéo</li>
+                            <li><code>&lt;audio&gt;</code> - Contenu audio</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>📋 Listes</h3>
+                        <ul>
+                            <li><code>&lt;ul&gt;</code> - Liste non ordonnée (puces)</li>
+                            <li><code>&lt;ol&gt;</code> - Liste ordonnée (numéros)</li>
+                            <li><code>&lt;li&gt;</code> - Élément de liste</li>
+                            <li><code>&lt;dl&gt;</code> - Liste de description</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>📊 Tableaux</h3>
+                        <ul>
+                            <li><code>&lt;table&gt;</code> - Conteneur de tableau</li>
+                            <li><code>&lt;tr&gt;</code> - Ligne de tableau</li>
+                            <li><code>&lt;th&gt;</code> - En-tête de tableau</li>
+                            <li><code>&lt;td&gt;</code> - Cellule de données</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- HTML5 sémantique -->
+            <section class="card">
+                <h2>Éléments Sémantiques HTML5</h2>
+                <p>HTML5 a introduit des éléments sémantiques qui décrivent le but du contenu, pas seulement son apparence :</p>
+
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>📄 Structure de Page</h3>
+                        <ul>
+                            <li><code>&lt;header&gt;</code> - Section supérieure de page/article</li>
+                            <li><code>&lt;nav&gt;</code> - Liens de navigation</li>
+                            <li><code>&lt;main&gt;</code> - Zone de contenu principal</li>
+                            <li><code>&lt;footer&gt;</code> - Section inférieure de page/article</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>📰 Sections de Contenu</h3>
+                        <ul>
+                            <li><code>&lt;section&gt;</code> - Groupement thématique de contenu</li>
+                            <li><code>&lt;article&gt;</code> - Contenu indépendant et réutilisable</li>
+                            <li><code>&lt;aside&gt;</code> - Contenu secondaire (barre latérale)</li>
+                            <li><code>&lt;div&gt;</code> - Conteneur générique (sans signification sémantique)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="note">
+                    <strong>Pourquoi le HTML sémantique est important :</strong> Il aide les lecteurs d'écran à assister les personnes handicapées, améliore le référencement SEO (les moteurs de recherche comprennent mieux votre contenu), et rend votre code plus maintenable.
+                </div>
+            </section>
+
+          
+           
+            <!-- Exercice -->
+            <section class="takeaways">
+                <h3>🏋️ Exercice Rapide</h3>
+                <p><strong>À vous de jouer !</strong> Modifiez cette page pour ajouter les éléments suivants : </p>
+                <ul>
+                    <li>Ajoutez du contenu sur l'histoire d'HTML, qui l'a inventé et quand dans la section "Qu'est-ce que le HTML ?" </li>
+                    <li>Ajoutez des exemples de balises pour les formulaires dans la section "Balises HTML Principales"</li>
+                    <li>Créez une nouvelle section "🔍 Outils de Développement" avec une liste des navigateurs populaires et les environnements de développement</li>
+                    <li>Ajoutez une image pertinente dans la section "🔍 Outils de Développement" (par exemple, une capture d'écran d'un éditeur de code)</li>
+                    <li>Ajoutez un lien vers un tutoriel HTML en ligne dans la section "Prêt pour l'Étape Suivante ?"</li>
+                </ul>
+            </section>
+
+            <!-- Étapes suivantes -->
+            <section class="card" style="text-align: center;">
+                <h2>Prêt pour l'Étape Suivante ?</h2>
+                <p>Vous savez maintenant comment créer la structure des pages web. Apprenons comment les rendre belles !</p>
+                <a href="css.html" class="btn">Apprendre le CSS →</a>
+            </section>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cours Fondamentaux du Web. Créé pour l'apprentissage et l'éducation.</p>
+        </div>
+    </footer>
+</body>
+</html>

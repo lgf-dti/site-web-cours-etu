@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Apprenez les bases du CSS - style, sélecteurs, mise en page et fondamentaux du design pour débutants. Guide complet du CSS3.">
+    <title>Introduction au CSS - Cours Fondamentaux du Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- En-tête avec navigation -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🌐 Fondamentaux du Web</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="html.html">Introduction au HTML</a></li>
+                        <li><a href="css.html" class="active">Introduction au CSS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <div class="container">
+            <!-- Section d'introduction -->
+            <section class="card intro-section">
+                <h1>Introduction au CSS</h1>
+                <p>Apprendre à styliser et concevoir de belles pages web</p>
+            </section>
+
+            <!-- Qu'est-ce que le CSS -->
+            <section class="card">
+                <h2>Qu'est-ce que le CSS ?</h2>
+                <p><strong>CSS</strong> signifie <strong>Cascading Style Sheets</strong> (Feuilles de Style en Cascade).
+                    Si HTML est le squelette d'une page web, CSS est tout ce qui la rend belle !</p>
+
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>🎨 Présentation</h3>
+                        <p>CSS contrôle la <strong>présentation visuelle</strong> des pages web - couleurs, polices,
+                            espacement, mise en page et animations.</p>
+                    </div>
+                    <div class="card">
+                        <h3>📱 Design Responsive</h3>
+                        <p>CSS fait que les sites web <strong>s'adaptent</strong> à différentes tailles d'écran, des
+                            téléphones aux grands moniteurs de bureau.</p>
+                    </div>
+                </div>
+
+                <div class="note">
+                    <strong>La séparation des préoccupations :</strong> HTML gère la structure et le contenu, CSS gère
+                    la présentation et la mise en page. Cette séparation rend les sites web plus faciles à maintenir et
+                    plus flexibles.
+                </div>
+            </section>
+
+            <!-- Sélecteurs -->
+
+Les sélecteurs indiquent au CSS quels éléments HTML styliser. Voici les plus importants :
+
+Élément : La syntaxe est element. Exemple p { color: blue; } sélectionne tous les paragraphes.
+
+Classe : La syntaxe est .nomclasse. Exemple .highlight { background: yellow; } sélectionne les éléments avec class="highlight".
+
+ID : La syntaxe est #nomid. Exemple #header { font-size: 24px; } sélectionne l'élément avec id="header".
+
+Universel : La syntaxe est *. Exemple * { margin: 0; } sélectionne tous les éléments.
+
+Classes
+
+Utilisez les classes pour les éléments qui partagent le même style. Les classes peuvent être réutilisées plusieurs fois. Par exemple, vous pouvez avoir un paragraphe avec class="attention" et une div avec class="attention".
+
+IDs
+
+Utilisez les IDs pour les éléments uniques. Chaque ID ne devrait apparaître qu'une fois par page. Par exemple, un header avec id="en-tete-principal".
+
+            <!-- Cascade et spécificité -->
+            <section class="card">
+                <h2>La Cascade & la Spécificité</h2>
+                <p>Quand plusieurs règles CSS s'appliquent au même élément, CSS utilise la spécificité pour déterminer
+                    quelle règle gagne :</p>
+
+                <div class="diagram">
+                    <h3>Hiérarchie de Spécificité (Plus élevée à plus basse)</h3>
+                    <div class="diagram-flow">
+                        <div class="diagram-step">
+                            <strong>1. Styles en ligne</strong><br>
+                            style="color: red;"<br>
+                            <em>(Spécificité : 1000)</em>
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="diagram-step">
+                            <strong>2. IDs</strong><br>
+                            #header<br>
+                            <em>(Spécificité : 100)</em>
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="diagram-step">
+                            <strong>3. Classes</strong><br>
+                            .highlight<br>
+                            <em>(Spécificité : 10)</em>
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="diagram-step">
+                            <strong>4. Éléments</strong><br>
+                            p, div, h1<br>
+                            <em>(Spécificité : 1)</em>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="note">
+                    <strong>Exemple simple :</strong> Si vous avez <code>p { color: blue; }</code> et
+                    <code>.special { color: red; }</code>, un élément comme <code>&lt;p class="special"&gt;</code> sera
+                    rouge car les sélecteurs de classe sont plus spécifiques que les sélecteurs d'élément.
+                </div>
+            </section>
+
+          
+         
+            <!-- Félicitations -->
+            <section class="takeaways">
+                <h3>🎉 Félicitations !</h3>
+               <p><strong>À vous de jouer !</strong> Réalisez les demandes suivantes : </p>
+                <ul>
+                    <li>Ajoutez la mise en forme pour la section "Sélecteurs CSS"</li>
+                    <li>Rendez le bouton "Retour au HTML" fonctionnel</li>
+                    <li>Modifiez la couleur du background</li>
+                    <li>Modifiez la couleur du bandeau de menu</li>
+                    <li>Ajoutez le contenu pour la section "Propriétés CSS Essentielles"</li>
+                    <li>Modifiez la police de tout le site</li>
+                </ul>
+            </section>
+
+            <!-- Étapes suivantes -->
+            <section class="card" style="text-align: center;">
+                <h2>Continuez à Apprendre !</h2>
+                <p>Ce n'est que le début de votre parcours de développement web. Il faut encore explorer :</p>
+                <ul>
+                    <li><strong>SEO</strong> - Optimisation pour les moteurs de recherche</li>
+                    <li><strong>JavaScript</strong> - Ajouter de l'interactivité à vos pages</li>
+                    <li><strong>Design Responsive</strong> - Développement mobile</li>
+                    <li><strong>Frameworks</strong> - Bootstrap</li>
+                    <li><strong>Backend</strong> - Bases de données, serveurs</li>
+                    <li><strong>Langages de programmation</strong> - Python, PHP</li>
+                </ul>
+                <a class="btn">← Retour au HTML</a>
+            </section>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cours Fondamentaux du Web. Créé pour l'apprentissage et l'éducation.</p>
+        </div>
+    </footer>
+</body>
+</html>
